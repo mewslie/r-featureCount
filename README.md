@@ -1,7 +1,7 @@
 # r-featureCounts
 Use featureCounts in R to get read counts from bam or sam files using a genome feature file such as gtf.
 
-The running of featureCounts is done via the [Rsubread](https://www.bioconductor.org/packages/release/bioc/html/Rsubread.html) library. Please [check their documentation](https://www.rdocumentation.org/packages/Rsubread/versions/1.22.2/topics/featureCounts) to understand what you need to set the parameters to.
+The calling of featureCounts is done via the [Rsubread](https://www.bioconductor.org/packages/release/bioc/html/Rsubread.html) library. Please [check their documentation](https://www.rdocumentation.org/packages/Rsubread/versions/1.22.2/topics/featureCounts) to understand what you need to set the parameters to.
 
 It may be helpful to check the bam or sam files before using featureCounts by using a [genome assembly viewer](https://igv.org/), and making sure that there is adequate coverage of sequence data.
 
