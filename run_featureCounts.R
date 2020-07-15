@@ -15,6 +15,7 @@ sample.names <- c("TX0r1","TX0r2","TX0r3","TX48r1","TX48r2","TX48r3","RZ0r1","RZ
 
 #call featureCounts for each bam.files
 library("Rsubread")
+#run featureCounts on all bam.files in one call
 readCounts <- featureCounts(files = bam.files, annot.ext = feature.file, useMetaFeatures = TRUE, GTF.attrType.extra = feature.select, strandSpecific = strand,
                             largestOverlap = large.overlap, GTF.featureType = feature.type, isGTFAnnotationFile = is.gtf, GTF.attrType = feature.identifier,
                             isPairedEnd = is.paired, requireBothEndsMapped = is.map.both.ends, countMultiMappingReads = is.multi.map)
