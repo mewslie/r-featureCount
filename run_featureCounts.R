@@ -20,7 +20,7 @@ readCounts <- featureCounts(files = bam.files, annot.ext = feature.file, useMeta
                             isPairedEnd = is.paired, requireBothEndsMapped = is.map.both.ends, countMultiMappingReads = is.multi.map)
 #if there are many bam.files it may take a long time so, call featureCounts manually in case there is an issue in one of the files
 ind <- 1 #manually change this to an index of bam.file
-assign(paste(count,ind),
+assign(paste("count",ind),
        featureCounts(files=bam.files[ind], annot.ext=genomeFile, useMetaFeatures=TRUE, GTF.attrType.extra=feature.select, strandSpecific=strand,
                      largestOverlap=large.overlap, GTF.featureType=feature.type, isGTFAnnotationFile=is.gtf, GTF.attrType=feature.identifier,
                      isPairedEnd=is.paired, requireBothEndsMapped=is.map.both.ends, countMultiMappingReads=is.multi.map))
